@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/pocket?useSSL=false
+    username: pocketguide
+    password: pocketguide
+    hikari:
+      minimumIdle: 5
+      maximumPoolSize: 25
+  jpa:
+    properties:
+      hibernate:
+        show_sql: ${SHOW_SQL:true}
+        type: all
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: create

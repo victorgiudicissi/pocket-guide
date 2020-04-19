@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: pocket
+      MYSQL_DATABASE: pocket
+      MYSQL_USER: pocketguide
+      MYSQL_PASSWORD: pocketguide
+    ports:
+      - "3306:3306"
